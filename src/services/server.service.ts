@@ -18,6 +18,7 @@ import swaggerDocument from '../../swagger.json';
 
 
 export const app = express();
+
 export const server = http.createServer(app);
 export const socket = new Server(server, {
   cors: {

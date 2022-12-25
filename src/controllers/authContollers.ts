@@ -27,7 +27,6 @@ export const signIn = async (req: Request, res: Response) => {
 
 
 export const signUp = async (req: Request, res: Response) => {
-
   const bodyError = checkBody(req.body, ['name', 'login', 'password'])
   if (bodyError) {
     return res.status(400).send(createError(400, "bad request: " + bodyError));
@@ -41,6 +40,7 @@ export const signUp = async (req: Request, res: Response) => {
   const hashedPassword = await hashPassword(password);
 
   try {
+    
     const newUser = await userService.createUser({ login, name, password: hashedPassword });
     res.json(newUser);
   }

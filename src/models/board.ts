@@ -6,7 +6,7 @@ const boardScheme = new Schema({
     type: String,
     required: true,
   },
-  owner: {
+  description: {
     type: String,
     required: true,
   },
