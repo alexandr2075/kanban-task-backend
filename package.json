@@ -10,7 +10,8 @@
     "start": "node dist/src/index.js",
     "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc",
-    "test": "test"
+    "test": "test",
+    "lint": "lint"
   },
   "author": "Andrew Troitskiy",
   "license": "ISC",
