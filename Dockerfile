@@ -10,4 +10,4 @@ COPY . .
 
 CMD ["npm", "run", "build"]
 
-EXPOSE 80
+EXPOSE 80 443
