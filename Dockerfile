@@ -9,3 +9,5 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "run", "build"]
+
+EXPOSE 80
